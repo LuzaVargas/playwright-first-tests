@@ -13,10 +13,10 @@ def test_add_product_to_cart(page: Page):
     # go to url https://automationexercise.com/products
     page.goto('https://automationexercise.com/products')
 
-	# hover of the first product found
+    # hover of the first product found
     page.locator(FIRST_PRODUCT_HOVER).hover()
 
-	# click on More Detail of the first product
+    # click on More Detail of the first product
     page.locator(MORE_DETAIL_BTN).click()
     page.go_back()
     page.locator(MORE_DETAIL_BTN).click()
